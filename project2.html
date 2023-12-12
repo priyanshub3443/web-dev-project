@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS web project</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5em;
+        }
+
+        #header{
+            background: black;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100px;
+        }
+        #contentwrapper{
+            float: left;
+            width: 100%;
+        }
+        #contentcolumn{
+            margin: 0 230px 0 230px;
+        }
+
+        #leftcoumn{
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background: #24cbff;
+        }
+        #rightcolumn{
+            float: left;
+            width: 230px;
+            margin-left: -230%;
+            background: #fffb00;
+        }
+        .inertext{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #5e5e5e;
+        }
+        #footer{
+            clear: left;
+            width: 100%;
+            background: black;
+            color: #FFF;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 4px;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        li{
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li:last-child{
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+        }
+        li a:hover:not(.active){
+            background-color: #b0b0b0;
+        }
+        .active{
+            background-color: #0099ff;
+        }
+
+        /* responsive layout css */
+        @media(max-width:840px) {/*drop right coloum down */
+
+        #leftcoumn{
+            margin-left: -100%;
+
+        }
+        #rightcolumn{
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+        }
+
+        #contentcolumn{
+            margin-right: 0;
+        }
+    }
+
+    @media(max-width: 600px){/*drop for left*/
+    
+    #leftcolumn{
+        float: none;
+        width: 100%;
+        clear: both;
+        margin-left: 0;
+    }
+    #contentcolumn{
+        margin-left: 0;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <ul style="display: inline;">
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#ontact">Contact</a></li>
+        </ul>
+        </div>
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="inertext">
+                    <b>Welcom !</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tenetur sunt, architecto autem quidem in ducimus nobis natus nulla corrupti doloribus iure? Corrupti molestias ex excepturi quia, soluta iste. Beatae, rem. Quae, sint possimus? Enim aliquam dolorem dignissimos sint tempora assumenda adipisci debitis repellat nihil obcaecati! Modi omnis eius dicta nihil eos accusantium soluta dolorem deleniti blanditiis accusamus porro ex dolorum dolor, nobis non commodi aut molestiae vel fugit rem est veritatis itaque. Eaque cumque delectus quos. Molestiae tempora facere maxime ea totam. Esse quis soluta provident facere laudantium quasi magni quidem odio beatae earum eveniet aspernatur, dignissimos, cupiditate minima repellendus tempore architecto nobis eum dolores repellat deleniti. Quasi magni at atque minima, odio reiciendis, ad earum saepe corrupti cupiditate dicta perferendis et quibusdam neque?
+                </div>
+            </div>
+        </div>
+        <div id="leftcolumn">
+            <div class="innertext">
+               <b>Left colum:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quod amet ea veritatis porro animi dicta ut facilis unde error, ullam necessitatibus maiores quibusdam quas corrupti ipsam neque vero consequatur impedit illum blanditiis similique magni. Sed maxime recusandae adipisci vitae possimus voluptate cupiditate ipsam eius?
+            </div>
+        </div>
+        <div id="rightcolumn">
+            <div class="inertext">
+
+                <b>Right colum</b><em>230px</em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus vitae labore quisquam, cupiditate facere, debitis recusandae tenetur sunt itaque dolor atque quaerat maxime consectetur, aspernatur eos numquam quos totam quidem ad magnam porro deleniti. Dolores excepturi, fuga dolor laborum totam, ducimus reiciendis, eius perferendis soluta harum ipsam voluptate? Similique.
+            </div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+    
+
+</body>
+
+</html>
