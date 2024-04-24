@@ -2,7 +2,7 @@ console.log("lest wrte java script")
 
 async function main() {
 
-    let a = await fetch("https://github.com/priyanshub3443/web-dev-project/tree/main/spotify_clone")
+    let a = await fetch("https://github.com/priyanshub3443/web-dev-project/tree/main/spotify_clone/songs")
     let response=await a.text();
     console.log(response)
     let div = document.createElement("div")
