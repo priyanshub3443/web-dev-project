@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
     "node-fetch": "^3.3.2"
   },
   "name": "priyanshu",
@@ -13,6 +15,5 @@
   "keywords": [],
   "author": "priyanshu",
   "license": "ISC",
-  "description": "this is demo",
-  "devDependencies": {}
+  "description": "this is demo"
 }
